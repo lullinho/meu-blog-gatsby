@@ -7,9 +7,16 @@ module.exports = {
     description: `a blog about frotend developemnt and other cool stuff`,
     author: `@my-blog`,
   },
+
+  //array que recebe plugins
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
+      //objeto que passamos o resolve(nome do nosso plugin) e passa as options dele, nome dos arquivos e diretório onde está os arquivos, vai ler todos arquivos que estão no diretório
+
+      // se quiser trabalhar com outras pastas, basta duplicar o código abaixo e mudar o caminho/path, digamos que tem pdfs
+
+      
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
