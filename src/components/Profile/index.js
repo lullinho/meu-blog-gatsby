@@ -1,6 +1,9 @@
 import React from 'react'
 import {StaticQuery, graphql} from 'gatsby'
 
+//usar chaves porque vai ter que usar return, tratar dados primeiro
+
+
 const Profile = () => (
     <StaticQuery
         query={graphql`
@@ -16,7 +19,11 @@ const Profile = () => (
         }
         
         `}
-        render={({site:{ siteMetadata: { title, position, description }}}) => (
+        render={({
+            site: { 
+                siteMetadata: { title, position, description },
+            },
+        }) => (
             <div class="Profile-wrapper">
                     <h1>{title}</h1>
                     <h2>{position}</h2>
