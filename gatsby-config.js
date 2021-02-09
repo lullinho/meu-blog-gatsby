@@ -1,3 +1,5 @@
+/*principal arquivo do gatsby, faz config relacionados aos plugins e outras config que podemos definir, instalar plugins aqui*/
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
